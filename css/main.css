@@ -25,7 +25,7 @@ body {
 
 
 section[id] {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 50px;
 }
 
 .inactive {
@@ -309,4 +309,64 @@ nav .icons button {
 box-shadow: 9px 14px 5px 0px rgba(212,204,212,0.81);
 }
 
+/*  --------------LO QUE OFRECEMOS---------------- */
+.ofrecemos {
+  width: 100%;
+  background-color: var(--white);
+  align-items: center;
+  gap: 30px;
+}
 
+  .main-container h1 {
+  color: black;
+  
+  }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;
+  place-content: center;
+  margin-top: 24px;
+  word-wrap: normal;
+}
+.product-card {
+  border-radius: 20px;
+  width: 240px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin: 10px 8px;
+}
+.product-card .product-info figure {
+  margin: 0;
+}
+.product-card .product-info figure img {
+  width: 35px;
+  height: 35px;
+}
+.product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.product-card .product-info div p:nth-child(2) {
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--very-light-pink);
+}
+
+/* ------------ */
