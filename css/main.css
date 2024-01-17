@@ -208,8 +208,8 @@ nav .icons button {
 }
 
 .division{
-  width: 80%;
-  padding: 0px 60px;
+  width: 50%;
+  padding: 0 5px;
 }  
 .line {
   width: auto;
@@ -268,4 +268,45 @@ nav .icons button {
   height: 500px;
   border-radius: 8px;
 }
+
+/* ------SECCIÓN DE ESPECIALIDAD----- */
+.especialidad {
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.titulo {
+  margin-top: 20px;
+  font-size: var(--sm);
+}
+.especialidad-cards{
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-evenly;
+  
+  
+}
+.card-section {
+  width: 300px;
+  height: 300;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family:'Quicksand', sans-serif;
+}
+.card-section img {
+  width: 100%;
+  -webkit-box-shadow: 9px 14px 5px 0px rgba(212,204,212,0.81);
+-moz-box-shadow: 9px 14px 5px 0px rgba(212,204,212,0.81);
+box-shadow: 9px 14px 5px 0px rgba(212,204,212,0.81);
+}
+
 
