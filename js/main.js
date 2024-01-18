@@ -55,55 +55,59 @@ const swiper = new Swiper('.swiper-hero', {
 
 const productList = [];
   productList.push({
-  image: 'https://housecarwash.com/Storage/modsnw/image/48-d8Zx4Ps0Or0Et0A.jpg',
+  image: './imgmedia/logomarcacasecontruction.png',
+   });
+  productList.push({
+   image: "./imgmedia/logomarcacaterpilar.png",
 });
   productList.push({
-  name: "Velas multicolor",
-  price: 120,
-  image: "./imgproducto/producto2.jpeg",
-});
-  productList.push({
-  name: "Globos para fiesta",
-  price: 150,
-  image: "./imgproducto/producto3.jpeg",
+   image: "./imgmedia/logomarcadoosan.png",
 
 });
   productList.push({
-  name: "Spacious kitchen",
-  price: 170,
-  image: "./imgproducto/producto4.jpeg",
+  image: "./imgmedia/logomarcahitachi.jpg",
 });
   productList.push ({
-  name:'Tennis Montain Bike',
-  price: 200,
-  image: './imgproducto/producto5.jpeg'
+  image: './imgmedia/logomarcahyundai.jpg'
 });
   productList.push ({
-  name:'Sunglasses',
-  price: 800,
-  image: './imgproducto/producto6.jpeg'
+  image: './imgmedia/logomarcajcb.jpg'
 });
   productList.push ({
-  name:'Sunglasses',
-  price: 600,
-  image: './imgproducto/producto7.jpeg'
+  image: './imgmedia/logomarcaJohnDeerelogo.jpg'
 });
   productList.push ({
-  name:'Sunglasses',
-  price: 600,
-  image: './imgproducto/producto8.jpeg'
+  image: './imgmedia/logomarcakobelco.jpg'
 });
   productList.push ({
-  name:'Sunglasses',
-  price: 600,
-  image: './imgproducto/producto9.jpeg'
+    image: './imgmedia/logomarcakomatsu.jpg'
 });
+  productList.push ({
+    image: './imgmedia/logomarcaluigong.jpg'
+});
+  productList.push ({
+    image: './imgmedia/logomarcaman.jpg'
+});
+  productList.push ({
+    image: './imgmedia/logomarcamummins.png'
+});
+  productList.push ({
+    image: './imgmedia/logomarcanweholland.png'
+});
+    productList.push ({
+    image: './imgmedia/logomarcasany.png'
+});
+  productList.push ({
+    image: './imgmedia/logomarcawartsila.png'
+});
+
+
 function renderProducts(arr) {
   for (product of arr){
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
 
-    // product = {name, price, image} => product.image
+    //product = {name, price, image} => product.image
     const productImg = document.createElement('img');
     productImg.setAttribute('src', product.image);
     
@@ -112,11 +116,11 @@ function renderProducts(arr) {
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');
     const productInfoDiv = document.createElement('div');
-    const productPrice = document.createElement('p');
-    productPrice.innerText =  'S/.' + product.price;
-    const productName = document.createElement('p');
-    productName.innerText = product.name
-    productInfoDiv.append(productName); //productPrice
+    // const productPrice = document.createElement('p');
+    // productPrice.innerText =  'S/.' + product.price;
+    // const productName = document.createElement('p');
+    // productName.innerText = product.name
+    // productInfoDiv.append(productName); //productPrice
 
       //Sección del ícono 
     const productInfoFigure = document.createElement('figure');
